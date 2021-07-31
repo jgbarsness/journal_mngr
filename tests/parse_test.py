@@ -1,21 +1,19 @@
 import pytest
-from models.collection.collection import Collection
-from controllers.parsers.config_parser import ConParser
+from peck.collection import Collection
+from peck.config_parser import ConParser
 from sys import argv
-from models.entry_types.full_entry import FullEntry
-from models.entry_types.title_entry import TitleEntry
-from models.entry_types.first_entry import FirstEntry
-from models.entry_types.second_entry import SecondEntry
-from models.entry_types.tag_entry import TagEntry
-from models.collection.collection import Collection
-from controllers.strategies import modify_strats, view_strats
-import constants.info_and_paths as c
-import constants.commands as cmd
-import constants.errors as e
+from peck.full_entry import FullEntry
+from peck.title_entry import TitleEntry
+from peck.first_entry import FirstEntry
+from peck.second_entry import SecondEntry
+from peck.tag_entry import TagEntry
+from peck.modify_strats import *
+import peck.info_and_paths as c
+import peck.commands as cmd
+import peck.errors as e
 from os import path, listdir
 from pathlib import Path
-from controllers.file_handle import FileHandle
-from app import call_entry
+from peck.file_handle import FileHandle
 
 
 class TestConfig:
