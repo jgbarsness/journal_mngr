@@ -65,7 +65,7 @@ section. may be changed without outdating anything.\n\
 # \'use_textbox\' can be set to false if textbox use is undesired.'
 
 DEFAULTS = ['#*#*#*#*#*#*#*#*#*#*#*#', '-----------------------',
-            '1st:', '2nd:', True]
+            '1st:', '2nd:', False]
 
 # representation of the folder to use for the program instance
 # works only with posix file path convention - notice the split at '/'
