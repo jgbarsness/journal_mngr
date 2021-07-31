@@ -14,9 +14,6 @@ setup(
     version = VERSION,
     packages = find_packages(),
     python_requires = '>=3.7',
-    install_requires = [
-        'tk',
-    ],
     entry_points = '''
         [console_scripts]
         peck=peck.peck:driver
