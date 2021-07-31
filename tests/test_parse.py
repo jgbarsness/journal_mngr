@@ -18,7 +18,7 @@ from peck.file_handle import FileHandle
 
 class TestConfig:
     def test_ini_parse(self):
-        tester = ConParser().parse("idl.ini")
+        tester = ConParser().parse("tests/idl.ini")
         assert tester["end_marker"] == "#*#*#*#*#*#*#*#*#*#*#*#"
         assert tester["date_underline"] == "-----------------------"
         assert tester["jtitle"] == "idl.txt"
@@ -29,7 +29,7 @@ class TestConfig:
 
 class TestFile:
     def test_file_parse(self):
-        test = Collection(None, "collection.txt")
+        test = Collection(None, "tests/collection.txt")
         assert len(test.collection) == 3
 
 class TestView:
